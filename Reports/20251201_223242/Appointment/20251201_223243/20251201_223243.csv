@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Appointment,Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:45,01-12-2025 22:32:52,7.728s,PASSED
+,,,,,,,
+Test Cases/Login_And_Appointment,Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:45,01-12-2025 22:32:52,7.568s,PASSED
+"openBrowser("""")",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:45,01-12-2025 22:32:47,2.362s,PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/"")",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:47,01-12-2025 22:32:48,0.521s,PASSED
+"click(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/a_Make Appointment""))",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:48,01-12-2025 22:32:48,0.401s,PASSED
+"setText(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/input_Username_txt-username""), ""John Doe"")",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:48,01-12-2025 22:32:49,0.818s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/input_Password_txt-password""), ""g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM"")",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:49,01-12-2025 22:32:49,0.275s,PASSED
+"click(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/button_Login""))",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:49,01-12-2025 22:32:50,0.266s,PASSED
+"click(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/span_Visit Date (Required)_glyphicon glyphi_cada34""))",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:50,01-12-2025 22:32:50,0.588s,PASSED
+"click(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/td_18""))",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:50,01-12-2025 22:32:51,0.491s,PASSED
+"setText(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/textarea_Comment_txt_comment""), ""Test"")",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:51,01-12-2025 22:32:51,0.743s,PASSED
+"click(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/button_Book Appointment""))",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:51,01-12-2025 22:32:52,0.308s,PASSED
+"click(findTestObject(""Object Repository/Login_App/Page_CURA Healthcare Service/a_Go to Homepage""))",Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:52,01-12-2025 22:32:52,0.535s,PASSED
+closeBrowser(),Edge Chromium 142.0.3595.94,,,01-12-2025 22:32:52,01-12-2025 22:32:52,0.101s,PASSED
