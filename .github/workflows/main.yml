@@ -1,14 +1,14 @@
 name: CI
 on:
-workflow_dispatch:
+  workflow_dispatch:
 
-  inputs:
-    Env:
-      type: choice
-      options:
-        - QA
-        - Staging
-        - Production
+    inputs:
+      Env:
+        type: choice
+        options:
+          - QA
+          - Staging
+          - Production
 jobs:
   build:
     runs-on: macos-latest
