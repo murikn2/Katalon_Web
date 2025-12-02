@@ -1,9 +1,17 @@
 name: CI
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+workflow_dispatch:
+ - push:
+  - branches: [ master ]
+  - pull_request:
+  -  branches: [ master ]
+  inputs:
+    Env:
+      type: choice
+      options:
+        - QA
+        - Staging
+        - Production
 jobs:
   build:
     runs-on: macos-latest
