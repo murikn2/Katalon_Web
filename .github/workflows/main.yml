@@ -29,4 +29,4 @@ jobs:
       with:
           version: '10.4.2'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -browserType=${{ github.event.inputs.Browser }} -statusDelay=15 -testSuitePath="Test Suites/Appointment" -apiKey="1dcc123f-13e5-4d69-a0a3-84447f54498f" --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -retry=0 -browserType="${{ github.event.inputs.Browser }}" -statusDelay=15 -testSuitePath="Test Suites/Appointment" -apiKey="1dcc123f-13e5-4d69-a0a3-84447f54498f" --config -webui.autoUpdateDrivers=true'
