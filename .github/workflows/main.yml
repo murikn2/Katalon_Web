@@ -12,12 +12,12 @@ on:
      browser:
       description: "Browser type"
       required: true
-      default: "Edge chromium"
+      default: "Edge Chromium"
       type: choice
       options:
           - chrome
           - firefox
-          - Edge chromium
+          - Edge Chromium
 jobs:
   build:
     runs-on: macos-latest
