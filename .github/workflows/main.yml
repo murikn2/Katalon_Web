@@ -17,7 +17,7 @@ on:
       options:
           - chrome
           - firefox
-          - edge
+          - Edge chromium
 jobs:
   build:
     runs-on: macos-latest
