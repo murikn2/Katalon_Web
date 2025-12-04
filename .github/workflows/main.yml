@@ -12,7 +12,7 @@ on:
      browser:
       description: "Browser type"
       required: true
-      default: "chrome"
+      default: "Edge chromium"
       type: choice
       options:
           - chrome
