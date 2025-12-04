@@ -15,8 +15,8 @@ on:
       default: "Edge Chromium"
       type: choice
       options:
-          - chrome
-          - firefox
+          - Chrome
+          - Firefox
           - Edge Chromium
 jobs:
   build:
