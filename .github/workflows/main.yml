@@ -9,12 +9,15 @@ on:
           - QA
           - Staging
           - Production
-     Browser:
-     type: choice
-     options:
-      -Chrome
-      -Edge Chromium
-      -Safari
+     browser:
+      description: "Browser type"
+      required: true
+      default: "chrome"
+      type: choice
+      options:
+          - chrome
+          - firefox
+          - edge
 jobs:
   build:
     runs-on: macos-latest
