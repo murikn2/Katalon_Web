@@ -3,12 +3,18 @@ on:
   workflow_dispatch:
 
     inputs:
-      Env:
+     Env:
         type: choice
         options:
           - QA
           - Staging
           - Production
+     Browser:
+     type: choice
+     options:
+      -Chrome
+      -Edge Chromium
+      -Safari
 jobs:
   build:
     runs-on: macos-latest
@@ -20,4 +26,4 @@ jobs:
       with:
           version: '10.4.2'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -browserType="Edge Chromium" -statusDelay=15 -testSuitePath="Test Suites/Appointment" -apiKey="1dcc123f-13e5-4d69-a0a3-84447f54498f" --config -webui.autoUpdateDrivers=true'
+          args: '-noSplash -retry=0 -browserType=${{ github.event.inputs.Browser }} -statusDelay=15 -testSuitePath="Test Suites/Appointment" -apiKey="1dcc123f-13e5-4d69-a0a3-84447f54498f" --config -webui.autoUpdateDrivers=true'
